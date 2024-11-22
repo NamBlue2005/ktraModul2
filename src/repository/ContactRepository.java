@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ContactRepository {
-    private static final String SRC_CONTACT = "contacts.csv";
+    private static final String SRC_CONTACT = "src/data/contacts.csv";
 
     public List<Contact> getAll() {
         List<Contact> contacts = new ArrayList<>();
