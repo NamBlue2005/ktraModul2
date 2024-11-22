@@ -120,8 +120,8 @@ public class MainView {
         String phoneNumber = regexContact.inputPhone();
         String email = regexContact.inputEmail();
         String address = regexContact.inputAddress();
-        Contact.Gender gender = regexContact.inputGender();  // Nhập giới tính
-        LocalDate dateOfBirth = regexContact.inputDateOfBirth();  // Nhập ngày sinh
+        Contact.Gender gender = regexContact.inputGender();
+        LocalDate dateOfBirth = regexContact.inputDateOfBirth();
 
         return new Contact(name, phoneNumber, email, address, gender, dateOfBirth);
     }

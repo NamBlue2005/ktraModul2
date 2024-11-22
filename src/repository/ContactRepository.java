@@ -17,7 +17,7 @@ public class ContactRepository {
             try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(file))) {
                 contacts = (List<Contact>) objectInputStream.readObject();
             } catch (IOException | ClassNotFoundException e) {
-                System.out.println("Error reading file: " + e.getMessage());
+                System.out.println("Lỗi đọc tập tin: " + e.getMessage());
             }
         }
         return contacts;
